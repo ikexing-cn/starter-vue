@@ -30,9 +30,5 @@ export default defineConfig({
     Components({
       dts: 'src/types/components.d.ts'
     })
-  ],
-
-  test: {
-    environment: 'jsdom'
-  }
+  ]
 })
