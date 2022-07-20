@@ -5,6 +5,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from 'virtual:generated-pages'
 
 import App from './App.vue'
+import '~/assets/css/main.css'
 
 const app = createApp(App)
 const pinia = createPinia()
