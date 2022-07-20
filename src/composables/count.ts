@@ -1,7 +1,7 @@
 export const useCount = defineStore('count', () => {
   let count = $ref<number>(0)
 
-  function decrease() {
+  function decrement() {
     count--
   }
 
@@ -11,7 +11,7 @@ export const useCount = defineStore('count', () => {
 
   return $$({
     count,
-    decrease,
+    decrement,
     increment
   })
 })

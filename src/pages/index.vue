@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { increment, decrease, count } = $(useCount())
+const { increment, decrement, count } = $(useCount())
 </script>
 
 <template>
@@ -7,7 +7,7 @@ const { increment, decrease, count } = $(useCount())
   <div class="use-count">
     <button @click="increment">+</button>
     {{ count }}
-    <button @click="decrease">-</button>
+    <button @click="decrement">-</button>
   </div>
 </template>
 
