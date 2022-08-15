@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.26.1
+  '@iconify-json/carbon': ^1.1.7
   '@types/node': ^18.7.3
   '@unocss/reset': ^0.45.6
   '@vitejs/plugin-vue': ^3.0.3
@@ -32,6 +33,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.26.1_4rv7y5c6xz3vfxwhbrcxxi73bq
+  '@iconify-json/carbon': 1.1.7
   '@types/node': 18.7.3
   '@unocss/reset': 0.45.6
   '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
@@ -242,9 +244,14 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
+  /@iconify-json/carbon/1.1.7:
+    resolution: {integrity: sha512-QULSpNWKaX4auIbjITDynfALdJYvOOy/xZb+aLOqCgvpBcmbz5tbqvow4r25FWtVsi4FHVpNQ8vyJZXsD1Hlxg==}
+    dependencies:
+      '@iconify/types': 1.1.0
+    dev: true
+
   /@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
-    dev: false
 
   /@iconify/utils/1.0.33:
     resolution: {integrity: sha512-vGeAqo7aGPxOQmGdVoXFUOuyN+0V7Lcrx2EvaiRjxUD1x6Om0Tvq2bdm7E24l2Pz++4S0mWMCVFXe/17EtKImQ==}

@@ -12,6 +12,8 @@ export const useCount = defineStore('count', () => {
   return $$({
     count,
     decrement,
-    increment
+    increment,
   })
+}, {
+  persist: true,
 })

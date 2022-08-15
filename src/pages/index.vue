@@ -4,15 +4,15 @@ const { increment, decrement, count } = $(useCount())
 
 <template>
   <div>hello world</div>
-  <div class="use-count">
-    <button @click="increment">+</button>
-    {{ count }}
-    <button @click="decrement">-</button>
+  <div flexc children-ml-2 mt-2>
+    <button btn @click="increment">
+      increment
+    </button>
+
+    <span>{{ count }}</span>
+
+    <button btn @click="decrement">
+      decrement
+    </button>
   </div>
 </template>
-
-<style lang="postcss" scoped>
-.use-count {
-  display: inline;
-}
-</style>

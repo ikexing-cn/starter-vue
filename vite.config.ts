@@ -12,12 +12,12 @@ import Unocss from 'unocss/vite'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`
-    }
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
   },
   plugins: [
     Vue({
-      reactivityTransform: true
+      reactivityTransform: true,
     }),
     Pages(),
     Layouts(),
@@ -25,11 +25,11 @@ export default defineConfig({
       imports: ['vue', 'vue/macros', 'vue-router', '@vueuse/core', 'pinia'],
       dts: 'src/types/auto-imports.d.ts',
       dirs: ['./src/composables'],
-      vueTemplate: true
+      vueTemplate: true,
     }),
     Unocss(),
     Components({
-      dts: 'src/types/components.d.ts'
-    })
-  ]
+      dts: 'src/types/components.d.ts',
+    }),
+  ],
 })
