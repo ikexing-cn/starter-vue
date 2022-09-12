@@ -7,8 +7,8 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    { flexc: 'flex items-center justify-center' },
-    { flexb: 'flex items-center justify-between' },
+    { center: 'flex items-center justify-center' },
+    { between: 'flex items-center justify-between' },
     { btn: 'rounded select-none px-2 py-1 inline-block bg-gray-600 text-white' },
   ],
   rules: [
