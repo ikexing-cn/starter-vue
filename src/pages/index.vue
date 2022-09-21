@@ -4,7 +4,7 @@ const { increment, decrement, count } = $(useCount())
 
 <template>
   <div>hello world</div>
-  <div flexc children-ml-2 mt-2>
+  <div center children-ml-2 mt-2>
     <button btn @click="increment">
       increment
     </button>
