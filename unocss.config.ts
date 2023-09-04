@@ -7,9 +7,8 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    { center: 'flex items-center justify-center' },
-    { between: 'flex items-center justify-between' },
-    { btn: 'rounded select-none px-2 py-1 inline-block bg-gray-600 text-white' },
+    { 'flex-center': 'flex items-center justify-center' },
+    { 'flex-between': 'flex items-center justify-between' },
   ],
   rules: [
     [
@@ -20,14 +19,6 @@ export default defineConfig({
         'text-overflow': 'ellipsis',
         '-webkit-line-clamp': d,
         '-webkit-box-orient': 'vertical',
-      }),
-    ],
-    [
-      /^center-text-(\d+)$/,
-      ([, d]) => ({
-        'height': `${d}px`,
-        'align-items': 'center',
-        'line-height': `${Number(d) - 2}px`,
       }),
     ],
   ],
