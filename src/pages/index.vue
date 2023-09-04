@@ -1,17 +1,20 @@
 <script lang="ts" setup>
-const { increment, decrement, count } = $(useCount())
+import { storeToRefs } from 'pinia'
+
+const { count } = storeToRefs(useCount())
+const { increment, decrement } = useCount()
 </script>
 
 <template>
   <div>hello world</div>
-  <div center children-ml-2 mt-2>
-    <button btn @click="increment">
+  <div flex="~ center" children-ml-2 mt-2>
+    <button @click="increment">
       increment
     </button>
 
     <span>{{ count }}</span>
 
-    <button btn @click="decrement">
+    <button @click="decrement">
       decrement
     </button>
   </div>

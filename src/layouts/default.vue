@@ -1,5 +1,5 @@
 <template>
-  <div center flex-col text-gray-500>
+  <div flex="~ col center" text-gray-500>
     <RouterView />
     <Footer />
   </div>

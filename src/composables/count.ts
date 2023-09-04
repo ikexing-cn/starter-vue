@@ -1,19 +1,17 @@
 export const useCount = defineStore('count', () => {
-  let count = $ref<number>(0)
+  const count = ref<number>(0)
 
   function decrement() {
-    count--
+    count.value--
   }
 
   function increment() {
-    count++
+    count.value++
   }
 
-  return $$({
+  return {
     count,
     decrement,
     increment,
-  })
-}, {
-  persist: true,
-})
+  }
+}, { persist: true })

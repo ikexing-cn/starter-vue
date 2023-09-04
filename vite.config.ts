@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import path from 'path'
+import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
@@ -16,13 +16,11 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue({
-      reactivityTransform: true,
-    }),
+    Vue(),
     Pages(),
     Layouts(),
     AutoImport({
-      imports: ['vue', 'vue/macros', 'vue-router', '@vueuse/core', 'pinia'],
+      imports: ['vue', 'vue-router', '@vueuse/core', 'pinia'],
       dts: 'src/types/auto-imports.d.ts',
       dirs: ['./src/composables'],
       vueTemplate: true,
